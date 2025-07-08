@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="gradient-box"></div>
+            <div class="select-area">
+                <div class="select-box">
+                    <p>Directions</p>
+                    <select>
+                        <option value="to top">Top</option>
+                        <option value="to top right">Top Right</option>
+                        <option value="to right">Right</option>
+                        <option value="to bottom right">Bottom Right</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to bottom left">Bottom Left</option>
+                        <option value="to left">Left</option>
+                        <option value="to top left">Top Left</option>
+                    </select>
+                </div>
+                <div class="input-color">
+                    <p>Number of Colors</p>
+                    <select class="color-count">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <div class="color-inputs">
+                        <input type="color" class="color" value="#ff0000">
+                        <input type="color" class="color" value="#0000ff">
+                    </div>
+                </div>
+            </div>
+            <div class="textarea-section">
+                <textarea class="text" readonly>background: linear-gradient(to left top, #ff0000, #0000ff);</textarea>
+            </div>
+            <div class="btns">
+                <button class="refresh">Refresh Colors</button>
+                <button class="copy">Copy Code</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
